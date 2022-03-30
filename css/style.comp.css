@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 45%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 18.75em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  color: #f9f7f6;
+  font-weight: 300;
+  line-height: 1.6;
+  text-transform: uppercase;
+  max-width: 170rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #211f30;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  grid-row-gap: 4rem;
+  padding: 2rem;
+}
+
+header {
+  font-weight: 400;
+  font-size: 5rem;
+  margin-top: 5rem;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.movies {
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  grid-row-gap: 3rem;
+}
+.movies__btn--sort {
+  justify-self: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1.25rem 4.5rem;
+  cursor: pointer;
+  box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7);
+}
+
+.movies__films {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  padding-bottom: 3rem;
+}
+@media only screen and (max-width: 100em) {
+  .movies__films {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .movies__films {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .movies__films {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem;
+  }
+}
+
+.film {
+  display: grid;
+  grid-template-rows: repeat(5, max-content);
+  justify-items: center;
+  grid-gap: 1rem;
+  box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+}
+.film__title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.film__image {
+  width: 80%;
+}
+.film__overview {
+  font-size: 1.4rem;
+  text-transform: none;
+  text-align: center;
+}
+@media only screen and (max-width: 62.5em) {
+  .film__overview {
+    font-size: 1.7rem;
+  }
+}
+.film__text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media only screen and (max-width: 62.5em) {
+  .film__text {
+    font-size: 1.7rem;
+  }
+}
+
+span {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.comp.css.map */
